@@ -4,9 +4,84 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+            * :not(hr,del) {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                border: none;
+                outline: none;
+                text-decoration: none;
+            }
+
+            body {
+                font-family: 'Roboto', sans-serif;
+            }
+
+            .content {
+                display: flex;
+                margin: 82px auto 32px;
+                max-width: auto;
+                flex-direction: column;
+                align-items: center;
+                background-color: rgb(245, 164, 164);
+            }
+
+            .container {
+                min-height: 100vh;
+                width: 100%;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                padding: 20px 9%;
+                position: relative;
+            }
+
+            header {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                z-index: 1000;
+                padding: 20px 9%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: rgb(245, 164, 164);
+            }
+
+            header .navbar a {
+                padding: 10px;
+                margin-right: 10px;
+                color: #FFFF;
+                font-size: 20px;
+            }
+
+            header .logo {
+                font-size: 25pt;
+                color: #FFFF;
+                margin-left: 20px;
+            }
+
+            header .navbar a:hover {
+                color: rgb(243, 236, 229);
+            }
+        </style>
+        <title>Fórmulário enviado com sucesso</title>
     </head>
     <body>
-        <h1>Complete</h1>
+        <header>
+            <a href="#" class="logo">Apaixonado Celular</a>
+        </header>
+        <div class="container">
+            <span>
+                <h1>Dados do celular recebidos!</h1>
+                <p>Você pode fechar essa página se quiser.</p>
+            </span>
+            <img src="https://cdn-icons-png.flaticon.com/512/3010/3010989.png" width="300">
+        </div>
     </body>
 </html>
