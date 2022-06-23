@@ -51,7 +51,7 @@ function getPromotion(stringAntigo: string, stringNovo: string) {
         ((oldprice - price) * 100) / oldprice);
 
     if (retorno > 15) {
-        return (retorno.toFixed(0));
+        return (`${retorno.toFixed(0)}% OFF`);
     } else {
         return ('');
     }
