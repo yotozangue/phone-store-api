@@ -6,7 +6,7 @@ export class FileJson {
     path: string;
 
     constructor() {
-        this.path = `${appRoot}/src/json/phones.json`;
+        this.path = `${appRoot}/assets/json/phones.json`;
     }
 
     public writeJson(phones: []) {

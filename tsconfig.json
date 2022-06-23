@@ -14,6 +14,14 @@
             "@controllers": [
                 "./src/controllers/*"
             ]
-        }
-    }
+        },
+    },
+    "include": [
+        "src/**/*",
+        "assets/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
 }

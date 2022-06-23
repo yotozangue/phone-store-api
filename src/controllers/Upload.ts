@@ -13,7 +13,7 @@ class Upload {
         phone = new Phone(phone, image?.filename);
         new FileJson().writeJson(phone);
 
-        return res.sendFile(`${appRoot}/src/pages/complete.html`);
+        return res.sendFile(`${appRoot}/assets/pages/complete.html`);
     }
 }
 

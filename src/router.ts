@@ -20,7 +20,7 @@ router.post('/send',
 
 router.use(
     '/static',
-    express.static(`${appRoot}/uploads`)
+    express.static(`${appRoot}/assets/uploads`)
 )
 
 export { router };

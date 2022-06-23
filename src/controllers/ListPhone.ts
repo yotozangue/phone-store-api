@@ -1,13 +1,11 @@
+import appRoot from 'app-root-path';
 import { Request, Response } from "express";
-import path from "path";
 
 class ListPhone {
 
     public home(req: Request, res: Response) {
-
-        return res.sendFile('phones.json', { root: path.join(__dirname, '../json') });
+        return res.sendFile(`${appRoot}/assets/json/phones.json`);
     }
 }
 
 export const listPhone = new ListPhone();
-

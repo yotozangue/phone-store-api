@@ -4,12 +4,11 @@ class UploadImage {
 
     constructor() { }
 
-
     private storage(): multer.StorageEngine {
 
         return multer.diskStorage({
             destination: (req, file, cb) => {
-                cb(null, 'uploads/')
+                cb(null, 'assets/uploads/')
             },
             filename: (req, file, cb) => {
                 const extensaoAquivo = file.originalname.split('.')[1];
