@@ -1,10 +1,11 @@
 {
     "compilerOptions": {
+        "outDir": "dist",
+        "rootDir": ".",
+        "baseUrl": ".",
         "target": "ES2015",
         "module": "commonjs",
         "allowJs": true,
-        "outDir": "build",
-        "rootDir": "src",
         "strict": true,
         "noImplicitAny": true,
         "esModuleInterop": true,

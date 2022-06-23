@@ -1,5 +1,5 @@
+import appRoot from 'app-root-path';
 import { Request, Response } from "express";
-import path from "path";
 import { Phone } from "../classes/Phone";
 import { FileJson } from "../modules/FileJson";
 
@@ -13,7 +13,7 @@ class Upload {
         phone = new Phone(phone, image?.filename);
         new FileJson().writeJson(phone);
 
-        return res.sendFile('complete.html', { root: path.join(__dirname, '../pages') });
+        return res.sendFile(`${appRoot}/src/pages/complete.html`);
     }
 }
 

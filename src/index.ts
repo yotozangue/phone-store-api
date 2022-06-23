@@ -1,4 +1,5 @@
 import config from 'config';
 import { App } from "./app";
 
-new App().server.listen(config.get("port"));
+const port = process.env.PORT || config.get("port")
+new App().server.listen(port);

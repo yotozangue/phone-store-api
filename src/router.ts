@@ -1,5 +1,7 @@
 import { Request, Response, Router } from "express";
+import appRoot from 'app-root-path';
 import multer from "multer";
+import express from "express";
 
 //Controller
 import { listPhone } from "./controllers/ListPhone";
@@ -15,5 +17,10 @@ router.post('/send',
     multer(uploadImage.getConfig).single("image"),
     upload.uploadImage
 );
+
+router.use(
+    '/static',
+    express.static(`${appRoot}/uploads`)
+)
 
 export { router };
