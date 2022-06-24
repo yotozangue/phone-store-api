@@ -1,17 +1,14 @@
 # Phone Store
 
 ## Dependencies
-- [] @types/config
-- [] @types/express
-- [] @types/mime-types
-- [] @types/multer
-- [] @types/node
-- [] body-parser
-- [] cors
-- [] config
-- [] express
-- [] multer
-- [] nodemon
-- [] ts-node
-- [] typescript
-# PhoneCelAPI
+- [x] app-root-path
+- [x] body-parser
+- [x] config
+- [x] cors
+- [x] csvtojson
+- [x] express
+- [x] multer
+- [x] rimraf
+- [x] typescript
+
+
